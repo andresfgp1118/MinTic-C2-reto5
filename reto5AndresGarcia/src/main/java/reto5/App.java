@@ -1,0 +1,21 @@
+package reto5;
+
+import reto5.view.ReportesView;
+import java.awt.*;
+
+import javax.swing.JFrame;
+public class App 
+{
+    public static void main( String[] args )
+    {
+        var reportesView = new ReportesView();
+        reportesView.setLayout(new FlowLayout());
+        reportesView.setSize(600, 500);
+        reportesView.setVisible(true);
+        reportesView.setResizable(true);
+        reportesView.setTitle("Informes - Reto 5");
+        reportesView.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        reportesView.setLocationRelativeTo(null); //ubica la ventana en el centro de la pantalla 
+        
+    }
+}
